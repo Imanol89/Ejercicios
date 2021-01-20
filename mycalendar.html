@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <!-- Le Agregamos algunos estilos 
+        Podemos tener varios 'class' o varios 'id'
+          . = class , # = id    -->
+        <style>
+
+        #content{
+            display:flex;
+            flex-flow: column nowrap;
+            align-items: stretch;
+            border: 2px solid black;
+            padding: 3em;
+            margin: 10px 10px 10px 10px;
+            line-height: 40px;
+            font-size: 25px;
+            background-color: rgb(47, 108, 179);
+            color:white;
+            
+            }
+
+                .flexboxhorizontal{
+                    display: flex;
+                    flex-direction:row;
+                    
+                }
+
+                .semana{ 
+                    display:row;
+                    margin: 1px;
+                    width: 8em;
+                    height: 4em;
+                    background-color: rgb(255, 255, 255);
+                    border: 3px solid rgb(178, 4, 221);
+                }
+
+                .dias{
+                    display:flex;
+                    margin:relative;
+                    flex-direction:row;
+                    padding: 0px;
+                    text-align: center;
+                    color:black;
+                }
+
+                .finde{
+                    margin: 1px;
+                    width: 8em;
+                    height: 4em;
+                    background-color: rgb(194, 193, 193);
+                    border: 3px solid rgb(178, 4, 221);
+                }
+                .box{ 
+                    margin: 1px;
+                    width: 8em;
+                    height: 4em;
+                    background-color: rgb(105, 208, 240);
+                    border: 3px solid rgb(4, 25, 221);
+                }
+
+               
+                /*
+                .flexboxvertical{
+                    display: flex;
+                    flex-direction: column;
+                }*/
+
+        </style>
+
+        
+            
+<!-- Primero añadimos estilo al botón -->
+		<style type="text/css">
+			  button{
+			    text-decoration: none;
+			    padding: 10px;
+			    font-weight: 600;
+			    font-size: 20px;
+			    color: #ffffff;
+			    background-color: #1883ba;
+			    border-radius: 6px;
+			    border: 2px solid #0016b0;
+			  }
+			  button:hover{
+			    color: #1883ba;
+			    background-color: #07FFE5;
+			  }
+		</style>
+<!-- Ahora pasamos a su Funcionamiento -->
+		<script type="text/javascript">
+		
+		</script>
+
+        
+</head>
+
+<body>
+    <main id="content">
+        
+        <strong>Calendario - Agenda 2021:</strong>
+        <button>Agendar Reunión</button>
+
+        <br><br>
+        <div class="dias">
+            <div class="semana">Lunes</div>
+            <div class="semana">Martes</div>
+            <div class="semana">Miercoles</div>
+            <div class="semana">Jueves</div>
+            <div class="semana">Viernes</div>
+            <div class="finde">Sabado</div>
+            <div class="finde">Domingo</div>
+        </div>
+
+
+        <div class="flexboxhorizontal">
+            <div class="box"><button></button></div>
+            <div class="box"><button></button></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+
+        <div class="flexboxhorizontal">
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+            <div class="box">07</div>
+            <div class="box">08</div>
+            <div class="box">09</div>
+            <div class="box">10</div>
+        </div>
+
+        <div class="flexboxhorizontal">
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box">13</div>
+            <div class="box">14</div>
+            <div class="box">15</div>
+            <div class="box">16</div>
+            <div class="box">17</div>
+        </div>
+
+        <div class="flexboxhorizontal">
+            <div class="box">18</div>
+            <div class="box">19</div>
+            <div class="box">20</div>
+            <div class="box">21</div>
+            <div class="box">22</div>
+            <div class="box">23</div>
+            <div class="box">24</div>
+        </div>  
+
+        <div class="flexboxhorizontal">
+            <div class="box">25</div>
+            <div class="box">26</div>
+            <div class="box">27</div>
+            <div class="box">28</div>
+            <div class="box">29</div>
+            <div class="box">30</div>
+            <div class="box">31</div>
+
+        </div> 
+
+        <!--
+        <div class="flexboxvertical">
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+        </div>
+    -->
+    </main>
+
+
+
+</body>
+</html>
