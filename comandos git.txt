@@ -1,0 +1,49 @@
+
+Crea un directorio nuevo, ábrelo y ejecuta
+
+git init
+
+Este comando marca el inicio de
+nuestro proyectom aquí le decimos 
+a GIT que empiece a monitorear
+todos nuestros cambios.
+para crear un nuevo repositorio de git.
+
+git status
+
+Nos dira el estado de nuestro proyecto
+y de todos los componentes.
+
+
+
+Para copiar el Proyecto remoto
+
+git clone https://github.com/Imanol89/Ejercicios.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+E-Commerce:
+EEUU
+China
+UK
+Alemania
+Francia
+Bélgica
+Dinamarca
+España?

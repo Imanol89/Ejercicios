@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documento de Prueba</title>
     <!-- Menu -->
     <header>
         <!--La etiqueta nav es la que define una sección por la que navegamos-->
@@ -16,21 +16,111 @@
             </ul>
         </nav>
     </header>
+    <!-- Le Agregamos algunos estilos 
+        Podemos tener varios 'class' o varios 'id'
+          . = class , # = id    -->
 
     <style>
         div{
-            color:blue;
+            color:black;
         }
+        /*class*/
         .red{
             color:red;
         }
+        .blue{
+            color:blue;
+        }
+        .green{
+            color:green;
+        }
+        .yellow{
+            color:yellow;
+        }
+        .purple{
+            color:purple;
+        }
+        /*id*/
         #heading{
-            font-size: 48px;
+            font-size: 50px;
+        }
+        #bodying{
+            font-size: 30px;
+        }
+        #estandar{
+            font-size: 20px;
         }
     </style>
-</head>
+    <style>
+        .cajita{
+            background-color: chocolate;
+            box-sizing: border-box;
+            padding: 1em;
+            border: 2px solid black;
+            line-height: 1.5;
+            display:flex;
 
+        }
+        .content{
+            border: 2px solid black;
+            padding: 1em;
+            margin: 10px 10px 0px 0px;
+            line-height: 40px;
+            font-size: 25px;
+         
+        }
+        
+        
+        .box{
+            border: 2px;
+        }
+                .verticalbox{
+                    display:flex;
+                    flex-direction:column;
+                    border: 1px solid blue;
+                    padding: 10px;
+                }
+                .horizontalbox{
+                    display:flex;
+                    flex-direction: row;
+                    border: 1px solid black;
+                    
+                }
+
+
+            .column1{
+                flex: 2px;
+                flex-direction:grid;
+            }
+            .column2{
+                flex: 2px;
+                flex-direction:grid;
+            }
+            
+
+       
+
+        /*margin - en sentido horario
+        
+        arriba 10px 
+        derecha 10px 
+        abajo 0px 
+        izquierda 0px
+        
+        -- https://www.gridlover.net/try --
+        root - tamaño de la fuente de todo el documento
+        por defecto son 16px
+        em = el que es inmediato al padre
+        1em = 16px
+        1rem = letra del tamaño de root
+        line-height = interlineado
+        */
+
+    </style>
+
+</head>
 <body>
+<div class="content">
 <main>
     <article>
         <h1>
@@ -47,31 +137,75 @@
     </article>
 </main>
 
+<!-- Ahora jugamos un poco con el CSS -->
+<div id="heading">Hola, soy el Título Principal:</div>
+    <div>World</div>
+  
+
+    <div class="verticalbox">
+
+        <div class="column1">1</div>
+        <div class="column1">2</div>
+        <div class="column1">3</div>
+        <div class="column1">4</div>
+        <div class="column1">5</div>
+        <div class="column1">6</div>
+        <div class="column1">7</div>
+        <div class="column1">8</div>
+        <div class="column1">9</div>
+    </div>
+    <div class="horizontalbox">
+        <div class="column2">1</div>
+        <div class="column2">2</div>
+        <div class="column2">3</div>
+        <div class="column2">4</div>
+        <div class="column2">5</div>
+        <div class="column2">6</div>
+        <div class="column2">7</div>
+        <div class="column2">8</div>
+        <div class="column2">9</div>
+    </div>
+
+
+    <div class="blue">
+     
+    </div>
+
+
+    <p class="red" id="bodying">Texto de la verguenza</p>
+
+<div id="bodying" class="green">Texto del cuerpo de la Web a 30 Pixels</div>
+    <p>parrafo</p>
+
+    <p class="green" id="estandar">Toda la hierba es verde,
+        <br>y siempre lo será...</p>
+
+<br><br>
+
 
 
     <form action="" method="POST">
     <div>
         <input type="text" name="user">
-    </div>    
+    </div>
+    <br>    
     <div>
         <input type="password" name="pass">
     </div>
+    <br>
     <div>
         <button type="submit">Login</button>
     </div> 
     </form>
 
-    <div id="heading">Hello</div>
-    <div>World</div>
-    <p>parrafo</p>
-    <p class="red">Parrafo2</p>
+    
 
 
 
 
 
 
-
+</div>
 
 
 
