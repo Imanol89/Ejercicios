@@ -1,20 +1,56 @@
 
-Crea un directorio nuevo, ábrelo y ejecuta
 
-git init
+git init -> marca el inicio del proyecto, con este comando indicamos que empiece a monitorear nuestro proyecto. solo se usa una vez y al comienzo
 
-Este comando marca el inicio de
-nuestro proyectom aquí le decimos 
-a GIT que empiece a monitorear
-todos nuestros cambios.
-para crear un nuevo repositorio de git.
+git status -> nos dice el estado de nuestro proyecto (que archivos no se han agreado) 
 
-git status
+git add -> sirve para agregar archivo. indicamos el nombre del archivo despues de add.
 
-Nos dira el estado de nuestro proyecto
-y de todos los componentes.
+git add -A -> añade todos los archivos que tenemos
+
+git commit -m "Mensaje" -> Guarda los cambios que hicimos
+
+git log -> nos da una lista de los commits
+
+git checkout -> avanzamos y retrocedemos entre los commits (tambien sirve para movernos entre ramas)
+
+git checkout master -> mueveme al ultimo commit
+
+git reset -> permite avanzar y retroceder entre los commits, pero los elimina. hay 3 tipos:
+
+git reset --soft ->no afecta al "working area" (nuestro codigo)
+
+git reset --mixed -> borra el "staging area" sin tocar el "working area"
+
+git reset --hard -> borra absolutamente todo. 
+
+git branch -> muestra las ramas
+
+git branch NOMBREDENUESTRARAMA -> creamos una rama 
+
+git brach -D NOMBREDENUESTRARAMA -> borra la rama indicada.
+
+git merge NOMBREDENUESTRARAMA -> fusiona dos ramas. primero hay que moverse a la rama que queremos consevar y desde ahi usar git merge.
+
+git branch -b NOMBREDENUESTRARAMA -> crea una rama y nos mueve directamente a ella
 
 
+-----------------------------------------------------------------
+
+
+
+GITHUB
+
+
+git remote add origin DIRECCIONGITHUB-> Sincronizar la carpeta de mi ordenador con la carpeta de GitHub (en git tengo que posicionarme en la carpeta que quiero sincronizar e introducir el comando desde alli)
+
+git remote -v -> para comprobar git remote add origin
+
+git remote remove origin -> elimina la sincronizacion
+
+git push origin master-> manda los cambios (commit) a GitHub (master es el nombre de una rama. Si la rama es otra, se sustituye master por el nombre de esa rama)
+
+git push --force origin master -> si push no va bien, realiza el push de manera forzada
 
 Para copiar el Proyecto remoto
 
