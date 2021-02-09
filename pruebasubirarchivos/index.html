@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+
+    #drop_zone {
+      border: 5px solid blue;
+      width: 200px;
+      height: 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <script type="module" src="src/index.js"></script>
+  <h2>Selecciona un archivo y Subelo!</h2>
+  <br>
+
+  <p>Drag and Drop your Images Here!</p>
+
+  <div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+    <p>Arrastra y suelta uno o más archivos a esta zona ...</p>
+  </div>
+
+</body>
+
+</html>

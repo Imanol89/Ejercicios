@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+<!-- https://github.com/Imanol89/Ejercicios/blob/master/mycalendar.html -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar con Flex</title>
+    <title>Calendar</title>
+
     <!-- Le Agregamos algunos estilos 
         Podemos tener varios 'class' o varios 'id'
-          . = class , # = id    -->
+          . = class , # = id    
+          los selectores de elementos, no tienen . ni #-->
+          
         <style>
 
         #content{
-            display:flex;
-            flex-flow: column nowrap;
-            align-items: stretch;
+            display: inline-flex;
+            flex-flow: column;
             border: 2px solid black;
-            padding: 3em;
+            padding: 2em;
             margin: 10px 10px 10px 10px;
             line-height: 40px;
             font-size: 25px;
+            font-family: Arial;
             background-color: rgb(47, 108, 179);
             color:white;
             
             }
 
                 .flexboxhorizontal{
-                    display: flex;
+                    display: inline-flex;
                     flex-direction:row;
-                    
+ 
                 }
 
                 .semana{ 
@@ -54,30 +58,29 @@
                     background-color: rgb(194, 193, 193);
                     border: 3px solid rgb(178, 4, 221);
                 }
+
+                /*  Estilo sólo para el Calendario.   */
                 .box{ 
                     margin: 1px;
+                    flex:1;
                     width: 8em;
                     height: 4em;
                     background-color: rgb(105, 208, 240);
                     border: 3px solid rgb(4, 25, 221);
                 }
                     .box:hover{
-                        background-color:dodgerblue;
+                        background-color: rgb(29, 224, 250);
+                        border: 3px solid rgb(214, 4, 221);
                     }
-               
-                /*
-                .flexboxvertical{
-                    display: flex;
-                    flex-direction: column;
-                }*/
-
+    
         </style>
-
-<!-- Primero añadimos estilo al botón -->
+<!--     BOTONES   
+    Añadimos el estilo de botones del Calendario -->
 		<style type="text/css">
 			  button{
+                display: inline-block;
 			    text-decoration: none;
-			    padding: 10px;
+			    padding: 15px;
 			    font-weight: 600;
 			    font-size: 20px;
 			    color: #ffffff;
@@ -85,25 +88,49 @@
 			    border-radius: 6px;
 			    border: 2px solid #0016b0;
 			  }
-			  button:hover{
-			    color: #1883ba;
-			    background-color: #07FFE5;
-			  }
-		</style>
+                    button:hover{
+                        color: #0d6d9c;
+                        background-color: #07FFE5;
+                    }
+        </style>
+<!-- Añadimos el estilo de botón para Agenda   */-->
+        <style type="text/css">
+            .button2{
+                display: inline-block;
+                text-decoration: none;
+                padding: 15px;
+                font-weight: 600;
+                font-size: 20px;
+                color: #ffffff;
+                background-color: #066b20;
+                border-radius: 6px;
+                border: 2px solid #41e420;
+                }
+                    .button2:hover{
+                        color: #066b20;
+                        background-color: #9bdf63;
+                    }
+        </style>
+
+
+
 <!-- Ahora pasamos a su Funcionamiento -->
 		<script type="text/javascript">
 		
-        </script>
-         
+		</script>
+
+        
 </head>
 
 <body>
     <main id="content">
         
         <strong>Calendario - Agenda 2021:</strong>
-        <button>Agendar Evento</button>
+        
+        <br>
+            <div><button class="button2">Agendar Reunión</button></div>
+        <br>
 
-        <br><br>
         <div class="dias">
             <div class="semana">Lunes</div>
             <div class="semana">Martes</div>
@@ -114,11 +141,12 @@
             <div class="finde">Domingo</div>
         </div>
 
+
         <div class="flexboxhorizontal">
-            <div class="box"><button></button></div>
-            <div class="box"><button></button></div>
-            <div class="box"><button></button></div>
-            <div class="box"><button></button></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
             <div class="box"><button>01</button></div>
             <div class="box"><button>02</button></div>
             <div class="box"><button>03</button></div>
@@ -127,40 +155,41 @@
         <div class="flexboxhorizontal">
             <div class="box"><button>04</button></div>
             <div class="box"><button>05</button></div>
-            <div class="box"><button>06</button></div>
+            <div class="box"><button>06</button></div>            
             <div class="box"><button>07</button></div>
             <div class="box"><button>08</button></div>
-            <div class="box"><button>09</button></div>
+            <div class="box"><button>09</button></div> 
             <div class="box"><button>10</button></div>
+                  
         </div>
 
         <div class="flexboxhorizontal">
             <div class="box"><button>11</button></div>
             <div class="box"><button>12</button></div>
-            <div class="box"><button>13</button></div>
+            <div class="box"><button>13</button></div>            
             <div class="box"><button>14</button></div>
             <div class="box"><button>15</button></div>
-            <div class="box"><button>16</button></div>
+            <div class="box"><button>16</button></div> 
             <div class="box"><button>17</button></div>
         </div>
 
         <div class="flexboxhorizontal">
             <div class="box"><button>18</button></div>
             <div class="box"><button>19</button></div>
-            <div class="box"><button>20</button></div>
+            <div class="box"><button>20</button></div>            
             <div class="box"><button>21</button></div>
             <div class="box"><button>22</button></div>
-            <div class="box"><button>23</button></div>
+            <div class="box"><button>23</button></div> 
             <div class="box"><button>24</button></div>
         </div>  
 
         <div class="flexboxhorizontal">
             <div class="box"><button>25</button></div>
             <div class="box"><button>26</button></div>
-            <div class="box"><button>27</button></div>
+            <div class="box"><button>27</button></div>            
             <div class="box"><button>28</button></div>
             <div class="box"><button>29</button></div>
-            <div class="box"><button>30</button></div>
+            <div class="box"><button>30</button></div> 
             <div class="box"><button>31</button></div>
 
         </div> 
@@ -181,6 +210,8 @@
         </div>
     -->
     </main>
+
+
 
 </body>
 </html>

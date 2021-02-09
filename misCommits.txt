@@ -1,36 +1,62 @@
 
-Copia de los commits:
 
-commit 86e2e89f5d8261c22e0177ed9f67fcf6375ccd06
-
-Author: Imanol Ortega <imaflight@gmail.com>
-
-Date:   Sat Jan 23 15:24:12 2021 +0100
-
-    
-Repo- Calendar-DOM - quitado
-
-
-
-commit 4c3f322f97b5c8449f69d72828135540a90c97a1
+commit 28661af9097d2a302b71769a2047271047d387be
 
 Author: Imanol Ortega <imaflight@gmail.com>
 
-Date:   Wed Jan 20 22:46:00 2021 +0100
+Date:   Mon Jan 25 19:48:13 2021 +0100
 
     
-nuevo commit
+Resubida de Apuntes de Clase y Prueba de Nivel
 
 
 
-commit a966bde87193055811ac4e7fcca2f55e31720acb
 
-Author: Imanol <imaflight@gmail.com>
+commit 3249bbf6d0a3176fe4d3ffd332a2f7deb1e5b16a
 
-Date:   Wed Jan 20 20:45:32 2021 +0100
+Author: Imanol Ortega <imaflight@gmail.com>
+
+Date:   Sun Jan 24 19:39:31 2021 +0100
 
     
-pruebas de inicio con pedro
+ultimo commit
+
+
+
+
+commit 9878d56c4f5d5a8aa6934b439d9db12a33ae15c5
+
+Author: Imanol Ortega <imaflight@gmail.com>
+
+Date:   Sun Jan 24 19:14:26 2021 +0100
+
+    
+Resubida del Calendario
+
+
+
+
+commit 3fb832ec25dc98f642604634eb5e4c69ed21795a
+
+Author: Imanol Ortega <imaflight@gmail.com>
+
+Date:   Sat Jan 23 16:14:27 2021 +0100
+
+    
+directorio resubido
+
+
+
+
+commit b8355d7884f5846552efd9da0e6417a26ae5eaa4
+
+Author: Imanol Ortega <imaflight@gmail.com>
+
+Date:   Sat Jan 23 15:53:48 2021 +0100
+
+    
+mas cambios
+
 
 
 
@@ -45,6 +71,7 @@ subo el calendario
 
 
 
+
 commit 3301fc15da98cc0c77dbf2d30bd848e32110927d
 
 Author: Imanol <imaflight@gmail.com>
@@ -53,3 +80,4 @@ Date:   Tue Jan 5 19:22:10 2021 +0100
 
     
 Primer archivo Index
+

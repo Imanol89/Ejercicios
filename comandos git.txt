@@ -26,6 +26,8 @@ git reset --hard -> borra absolutamente todo.
 
 git branch -> muestra las ramas
 
+git branch -a -> muestra las ramas ocultas
+
 git branch NOMBREDENUESTRARAMA -> creamos una rama 
 
 git brach -D NOMBREDENUESTRARAMA -> borra la rama indicada.
@@ -41,40 +43,34 @@ git branch -b NOMBREDENUESTRARAMA -> crea una rama y nos mueve directamente a el
 
 GITHUB
 
+Para copiar el Proyecto remoto y Sincronizarnos con él:
 
-git remote add origin DIRECCIONGITHUB-> Sincronizar la carpeta de mi ordenador con la carpeta de GitHub (en git tengo que posicionarme en la carpeta que quiero sincronizar e introducir el comando desde alli)
+1- git clone https://github.com/Imanol89/Ejercicios.git
 
-git remote -v -> para comprobar git remote add origin
+
+2- git remote add origin DIRECCIONGITHUB-> Sincronizar la carpeta de mi ordenador con la carpeta de GitHub (en git tengo que posicionarme en la carpeta que quiero sincronizar e introducir el comando desde alli)
+
+3- git remote -v -> para comprobar git remote add origin
 
 git remote remove origin -> elimina la sincronizacion
 
 git push origin master-> manda los cambios (commit) a GitHub (master es el nombre de una rama. Si la rama es otra, se sustituye master por el nombre de esa rama)
 
+git push origin test -> manda los cambios (commit) a la rama "test".
+
+git push origin master will push your changes to the remote server. ... 
+If you want to push your changes to any other branch (say test-branch), 
+you can do it by: git push origin test-branch. 
+This will push your code to origin of test-branch in your repository.
+
+
 git push --force origin master -> si push no va bien, realiza el push de manera forzada
 
-Para copiar el Proyecto remoto
-
-git clone https://github.com/Imanol89/Ejercicios.git
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-E-Commerce:
+Países triunfadores en E-Commerce:
 EEUU
 China
 UK
