@@ -14,7 +14,9 @@ git log -> nos da una lista de los commits
 
 git checkout -> avanzamos y retrocedemos entre los commits (tambien sirve para movernos entre ramas)
 
-git checkout master -> mueveme al ultimo commit
+git checkout master -> mueveme al ultimo commit / mueve a la rama master
+
+git fetch - recuperar información sobre las ramas
 
 git reset -> permite avanzar y retroceder entre los commits, pero los elimina. hay 3 tipos:
 
@@ -36,7 +38,9 @@ git merge NOMBREDENUESTRARAMA -> fusiona dos ramas. primero hay que moverse a la
 
 git branch -b NOMBREDENUESTRARAMA -> crea una rama y nos mueve directamente a ella
 
-
+git fetch  - es el comando que le dice a tu git local que recupere la información 
+de metadatos más reciente del original (pero no realiza ninguna transferencia de 
+archivos. Es más como verificar si hay cambios disponibles).
 -----------------------------------------------------------------
 
 
@@ -47,10 +51,16 @@ Para copiar el Proyecto remoto y Sincronizarnos con él:
 
 1- git clone https://github.com/Imanol89/Ejercicios.git
 
-
 2- git remote add origin DIRECCIONGITHUB-> Sincronizar la carpeta de mi ordenador con la carpeta de GitHub (en git tengo que posicionarme en la carpeta que quiero sincronizar e introducir el comando desde alli)
 
 3- git remote -v -> para comprobar git remote add origin
+
+4- git pull -> Descarga del Proyecto al repo local.
+
+Si no se realiza el gitpull correctamente:
+ejemplo
+
+git restore src/pages/ingredients/components/ingredient-card.module.css
 
 git remote remove origin -> elimina la sincronizacion
 
